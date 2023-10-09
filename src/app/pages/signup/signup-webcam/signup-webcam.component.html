@@ -1,0 +1,5 @@
+<app-webcam (image-control)="setForm($event)">
+  <div class="col-auto">
+    <button mat-flat-button color="accent" [disabled]="!haveImage" (click)="signUp()">Cadastrar</button>
+  </div>
+</app-webcam>

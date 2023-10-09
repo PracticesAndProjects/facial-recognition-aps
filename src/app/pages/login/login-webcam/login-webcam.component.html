@@ -1,0 +1,5 @@
+<app-webcam (image-control)="updateForm($event)">
+  <div class="col-auto">
+    <button mat-flat-button color="primary" (click)="doLogin()" [disabled]="!hasImage">Fazer login</button>
+  </div>
+</app-webcam>

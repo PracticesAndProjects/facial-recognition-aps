@@ -1,0 +1,26 @@
+<div class="row justify-content-center">
+  <div class="w-auto m-3">
+    <webcam *ngIf="!cameraNotFound" [trigger]="trigger" [width]="240" (initError)="handleInitError($event)" (imageCapture)="handleImage($event)"></webcam>
+    <div *ngIf="cameraNotFound">
+
+      <mat-chip-listbox aria-label="Câmera não encontrada">
+        <mat-chip color="warn" highlighted="true">
+          <mat-icon>close</mat-icon>
+          Câmera não encontrada
+        </mat-chip>
+      </mat-chip-listbox>
+
+    </div>
+  </div>
+</div>
+<div class="row justify-content-center">
+  <div class="col-auto">
+    <button mat-raised-button color="primary" (click)="tirarFoto()" *ngIf="!cameraNotFound; else goBack">Tirar foto</button>
+    <ng-template #goBack>
+      <a mat-raised-button color="primary" routerLink=".." >Go back</a>
+    </ng-template>
+  </div>
+  <ng-content></ng-content>
+</div>
+
+

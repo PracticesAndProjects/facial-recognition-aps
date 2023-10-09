@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-12">
+    <h1 class="mat-h1">Dashboard</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <mat-list role="list">
+      <mat-list-item role="listitem">Usuário: {{user.email}}</mat-list-item>
+      <mat-list-item role="listitem">Nível de acesso: {{user.nivel_acesso}}</mat-list-item>
+    </mat-list>
+
+  </div>
+  <div class="row">
+    <div class="col-auto">
+      <button mat-flat-button color="primary" (click)="logout()">Logout</button>
+    </div>
+  </div>
+</div>
