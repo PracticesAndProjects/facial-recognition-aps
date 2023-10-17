@@ -25,6 +25,7 @@ import {MatListModule} from "@angular/material/list";
 import {HTTP_INTERCEPTORS, HttpClient, HttpClientModule} from "@angular/common/http";
 import {ServerUrlInterceptor} from "./core/interceptors/server-url.interceptor";
 import {ErrorInterceptor} from "./core/interceptors/error.interceptor";
+import { LevelCheckerComponent } from './pages/dashboard/components/level-checker/level-checker.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import {ErrorInterceptor} from "./core/interceptors/error.interceptor";
     SignupWebcamComponent,
     LoginWebcamComponent,
     DashboardComponent,
+    LevelCheckerComponent,
   ],
   imports: [HttpClientModule, WebcamModule, BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatCardModule, MatInputModule, ReactiveFormsModule, MatButtonModule, MatDividerModule, NotifierModule, MatChipsModule, MatIconModule, MatGridListModule, MatMenuModule, MatListModule],
   providers: [

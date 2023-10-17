@@ -1,0 +1,20 @@
+:host {
+  margin-top: 2rem;
+}
+
+.base__access {
+  border: 1px solid;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+}
+
+.error {
+  border-color: crimson;
+  background-color: transparentize(crimson, 0.5);
+}
+
+.success {
+  border-color: seagreen;
+  background-color: transparentize(seagreen, 0.5);
+}
